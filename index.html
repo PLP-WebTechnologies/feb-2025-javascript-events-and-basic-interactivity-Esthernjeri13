@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stranger Things Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="main-title">Welcome to the Stranger Things Shop</h1>
+    <button id="enter-btn">Enter the Upside Down</button>
+
+    <div id="shop-section" class="hidden">
+      <h2>Featured Products</h2>
+      <div class="product" ondblclick="revealSecret()">
+        <img src="static/images/image1.png" alt="Demogorgon" />
+        <p>Demogorgon Figurine</p>
+      </div>
+      <div class="product">
+        <img src="static/images/image.png" alt="Eggo Waffles" />
+        <p>Eggo Waffle Box</p>
+      </div>
+      <button id="magic-btn">Click Me!</button>
+
+      <form id="signup-form">
+        <h3>Join the Hawkins Club</h3>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <p id="form-feedback"></p>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
